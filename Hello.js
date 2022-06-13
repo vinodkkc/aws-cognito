@@ -10,9 +10,10 @@
    // set user data to the application state
   });
 
- AWS.config.region = 'eu-west-1';
+ AWS.config.region = 'us-east-1';
  AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-  IdentityPoolId: ' us-east-1_jMxtU8DPE',
+  IdentityPoolId: 'us-east-1_jMxtU8DPE',
+  ClientId: '39ke0tcj53fh9k77mefvqtrckg'
   Logins: {
     'accounts.google.com': auth.authResponse.id_token
    }
